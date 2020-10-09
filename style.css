@@ -1,0 +1,134 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+	font-family: sans-serif;
+	font-size: 14px;
+}
+body {
+	width: 100%;
+	min-height: 100vh;
+	background-color: rgb(243, 243, 243);
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+}
+.instawrapper {
+	display: flex;
+	align-items: center;
+	justify-content: start;
+	width: 60%;
+	height: 100vh;
+}
+.instaphone {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 50%;
+}
+instaphone img {
+	height: 50ren;
+}
+.instacontinue {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	flex-direction: column;
+	width: 50%;
+	min-height: 34rem;
+}
+.grupo {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-direction: column;
+	background: white;
+	width: 100%;
+	padding: 1.3rem 0;
+	border: 1px solid lightgray;
+}
+.grupo:nth-child(1) {
+	min-height: 19rem;
+}
+.logo {
+	height: 5rem;
+}
+.avatar {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	border-radius: 50%;
+	overflow: hidden;
+}
+.avatar img {
+	height: 6rem;
+}
+.entrar {
+	color: #ffffff;
+	background: #0095f6;
+	padding: 8px;
+	border-radius: 4px;
+}
+.sair {
+	color: #0095f6;
+	margin-top: 1rem;
+}
+.naoconta {
+	color: rgb(160 ,160 ,160);
+}
+.nconta {
+	color: rgb(160 ,160 ,160);
+}
+.linkazul {
+	color: #0095f6;
+}
+.obterapp {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	width: 100%;
+	padding: 1.3rem 0;
+}
+.obtenha {
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	width: 100%;
+	padding: 1rem;
+}
+
+.baixar {
+	height: 3rem;
+	width: 10rem;
+	background-size: cover;
+}
+.baixar:nth-child(2) {
+	background-image: url('imagens/google.png');
+}
+
+@media (max-width: 1024px) {
+	.instawrapper {
+		width: 90%;
+	}
+}
+@media (max-width: 650px) {
+	body{
+		background: white;
+	}
+	.grupo {
+		border: 1px solid transparent;
+	}
+	.instawrapper {
+		width: 90%;
+	}
+	.instaphone {
+		display: none;
+	}
+	.instacontinue {
+		width: 100%;
+	}
+}
